@@ -5,6 +5,8 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(32, 32, 32);
+  color: white;
 }
 .container {
   text-align: center;

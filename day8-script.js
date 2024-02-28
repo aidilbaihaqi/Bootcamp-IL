@@ -59,5 +59,5 @@ class Person {
   }
 }
 const fia = new Person("Fia", 18); 
-
+fia.sayName();
 
