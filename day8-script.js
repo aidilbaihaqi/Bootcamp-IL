@@ -21,9 +21,7 @@ function buildPerson(name, age, occupation) {
 const person = buildPerson("Aidil", 19, "Student");
 console.log(person);
 
-// logika ini belum selesai
-
-function seeGrade(name, score=0){
+function seeGrade(name, score){
   if(score>=90 && score<=100) {
     console.log(`${name} get A grade`);
   }else if(score>=80 && score<=90) {
@@ -62,5 +60,4 @@ class Person {
 }
 const fia = new Person("Fia", 18); 
 
-// belum selesai
 
