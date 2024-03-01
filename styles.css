@@ -1,0 +1,228 @@
+/* Import Font menggunakan API Google */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* Universal Selector (Bersifat GLOBAL) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Root Selector */
+:root {
+    --primer: #ededed;
+    --sekunder: #111111;
+    --tersier: #FFCD29;
+}
+
+/* Body HTML */
+body {
+    background: var(--sekunder);
+    color: var(--primer);
+}
+ 
+/* Class Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Class Logo */
+.logo {
+    font-size: 25px;
+    color: var(--primer);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.logo-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: var(--primer);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: var(--tersier);
+}
+
+/* Pic /pfp */
+.pfp img {
+    position: absolute;
+    top: 30vh;
+    right: 40vh;
+    box-shadow: 0 0 10px var(--tersier);
+    transition: 0.5s;
+}
+
+.pfp img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--sekunder);
+    color: var(--primer);
+    text-align: center;
+    padding: 40px;
+}
+
+/* ========================================= */
+#beranda {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.beranda-content {
+    max-width: 600px;
+}
+
+.beranda-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.beranda-content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 20px 0 40px 0;
+}
+
+.beranda-content .btn-box {
+    height: 50px;
+    width: 150px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    background: transparent;
+    border: 2px solid var(--tersier);
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--tersier);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 3px;
+    z-index: 1;
+    overflow: hidden;
+
+    /* background-color: #04AA6D; Menambahkan warna latar belakang */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; /* Menghapus duplikasi deklarasi */
+    display: inline-block; /* Menghapus karakter '|' yang tidak diperlukan */
+}
+
+.btn-box a:hover {
+    color: var(--primer);
+}
+
+.active, .btn-box a:hover {
+    color: white;
+}
+
+.btn-box a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: var(--tersier);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+ 
+/* sosemed ========================== */
+
+/* Sosmed */
+.sosmed {
+    padding-top: 40px;
+}
+.sosmed a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Mengubah 5ppx menjadi 50px */
+    width: 50px;
+    background: transparent;
+    border: 2px solid var(--tersier);
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--tersier);
+    text-decoration: none;        
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sosmed a:hover {
+    color: var(--primer);
+}
+
+.sosmed a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: var(--tersier);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.sosmed a:hover::before {
+    width: 100%;
+}
+
+#tentang {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.tentang-content {
+    max-width: 600px;
+}
+
+.tentang-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+ 
